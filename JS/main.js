@@ -1,6 +1,4 @@
-﻿/* url to csv : http://192.168.1.13/tmp_res/merlin_shortened.csv */
-
-function getRandomColor() {
+﻿function getRandomColor() {
     var letters = '0123456789ABCDEF'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++) {
@@ -12,7 +10,7 @@ function getRandomColor() {
 function getFileObject() {
     $.ajax({
         type: "GET",
-        url: "http://Krakcen.github.io/Res/FaeriaData/merlin_shortened.csv",
+        url: "https://Krakcen.github.io/Res/FaeriaData/merlin_shortened.csv",
         success: function (text) {
             dataObj = Papa.parse(text);
         },
