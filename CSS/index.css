@@ -1,0 +1,214 @@
+﻿html {
+    overflow-y: scroll; 
+}
+
+body {
+    padding-top: 70px; 
+    background: url(../Res/Images/Background.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: Faerie;
+    src: url(../Fonts/Faerie/FAERIE__.TTF);
+}
+
+.faeriaNav {
+    margin-bottom: 0px;
+}
+
+.main-content {
+    width:100%;
+    margin-top: 30px;
+}
+
+.filterBar {
+    position: fixed;
+}
+
+.faeriaTitle {
+    font-family: Faerie;
+    color: #1C6BA0;
+}
+
+
+
+
+/* RARITY */
+
+/* Button Neutral */
+.btn-neutral {
+    background-color: #FFF;
+    color: #000;
+    border-color: #000;
+
+}
+
+.btn-default:hover.btn-neutral {
+    background-color:#000;
+    border-color:#000;
+    color:#FFF;
+}
+
+.btn-default:active.btn.btn-neutral {
+    background-color:#000;
+    border-color:#000;
+    color:#FFF;
+}
+
+
+/* Button Rare */
+.btn-rare {
+    background-color: #FFF;
+    color: #0275d8;
+    border-color: #0275d8;
+
+}
+
+.btn-default:hover.btn-rare {
+    background-color:#0275d8;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-rare.btn-rarity-group.active {
+    background-color:#0275d8;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+/* Button Epic */
+.btn-epic {
+    background-color: #FFF;
+    color: #6441A5;
+    border-color: #6441A5;
+
+}
+
+.btn-default:hover.btn-epic {
+    background-color:#6441A5;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-epic.btn-rarity-group.active {
+    background-color:#6441A5;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+
+/* Button Neutral */
+.btn-legendary {
+    background-color: #FFF;
+    color: #f0ad4e;
+    border-color: #f0ad4e;
+
+}
+
+.btn-default:hover.btn-legendary {
+    background-color:#f0ad4e;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-legendary.btn-rarity-group.active {
+    background-color:#f0ad4e;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+
+/* Button Creature*/
+.btn-creature {
+    background-color: #FFF;
+    color: #458B00;
+    border-color: #458B00;
+}
+
+.btn-default:hover.btn-creature {
+    background-color:#458B00;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-creature.active {
+     background-color:#458B00;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+
+/* Button Structure*/
+.btn-structure {
+    background-color: #FFF;
+    color: #b20000;
+    border-color: #b20000;
+}
+
+.btn-default:hover.btn-structure {
+    background-color:#b20000;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-structure.active {
+    background-color:#b20000;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+
+/* Button Event*/
+.btn-event {
+    background-color: #FFF;
+    color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.btn-default:hover.btn-event {
+    background-color:#f0ad4e;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+.btn.btn-default.btn-event.active {
+    background-color:#f0ad4e;
+    border-color:#FFF;
+    color:#FFF;
+}
+
+
+.btn.btn-default.btn-neutral.btn-rarity-group.active {
+    background-color:#000;
+    border-color:#000;
+    color:#FFF;
+}
+
+.btn-rarity-group {
+    margin-top:15px;
+}
+
+
+/* SEARCH */
+.card-search {
+    margin-top:15px;
+}
+
+.form-control.card-search-input {
+    margin-bottom:10px;
+}
+
+.card-name {
+    
+}
+
+.cardBox {
+    max-width:350px;
+    height:auto;
+    /*float:left;
+    min-width: 350px;
+    max-width: 550px;
+    height: auto;*/
+}

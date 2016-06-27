@@ -1,0 +1,54 @@
+﻿Example Image Gallery Layout
+
+<div class="row">
+ <div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/001.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/045.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/060.png" alt="">
+</div>
+</div>
+
+<div class="row">
+ <div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/001.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/045.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/060.png" alt="">
+</div>
+</div>
+
+<div class="row">
+ <div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/001.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/045.png" alt="">
+</div>
+<div class="col-md-4 portfolio-item">
+<img class="img-responsive" src="Res/FaeriaData/English/060.png" alt="">
+</div>
+</div>
+
+
+Parser Help (Papa Parser CSV)
+
+74  ; BLUE      ; Tyranax          ; creature  ;           ; 5    ; 1    ;        ;          ;        ; 4     ; 6  ;                                                     ;           ; 2               ; 100009   ; COMMON
+29  ; HUMAN     ; Master Swordsman ; creature  ;           ; 3    ;      ;        ;          ;        ; 2     ; 3  ; Has +2/+0 during your turn.                         ;           ; 0               ; 101000   ; EXCEPTIONAL
+196 ; RED       ; Architect        ; creature  ;           ; 2    ;      ;        ; 2        ;        ; 2     ; 2  ; {gift} - Give a structure +2 Life.                  ;           ; 0               ; 101000   ; RARE
+152 ; GREEN     ; Vine Wall        ; structure ;           ; 1    ;      ; 2      ;          ;        ;       ; 4  ; {taunt} {last_words} - Create a forest at random.   ;           ; 2               ; 101000   ; COMMON
+257 ; YELLOW    ; Desert Twister   ; event     ;           ; 0    ;      ;        ;          ; 5      ;       ;    ; Teleport a creature to a desert you control.        ;           ; 0               ; 101000   ; RARE
+
+ID  ; LAND_TYPE ; NAME             ; CARD_T    ; SEPARATOR ; COST ; LAKE ; FOREST ; MOUNTAIN ; DESERT ; ATCK  ; HP ; CARD_DESCRIPTION                                    ; SEPARATOR ; NUMBER_IN_CODEX ; CODEX_ID ; RARITY
+
+Card_Name | OK
+Card_Type | OK
+Card_Cost | OK
+Land_Type | OK
+Rarity    | OK
