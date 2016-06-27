@@ -12,7 +12,7 @@ function getRandomColor() {
 function getFileObject() {
     $.ajax({
         type: "GET",
-        url: "http://192.168.1.13/tmp_res/merlin_shortened.csv",
+        url: "http://Krakcen.github.io/Res/FaeriaData/merlin_shortened.csv",
         success: function (text) {
             dataObj = Papa.parse(text);
         },
