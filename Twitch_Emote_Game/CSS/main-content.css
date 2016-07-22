@@ -1,0 +1,21 @@
+.main-content {
+  min-height:100%;
+  background-color: #6441A5;
+  padding-top: 100px;
+}
+
+.navbar-teg {
+  background-color: white;
+}
+
+#teg-toolbar {
+  font-family:maincontent;
+}
+
+#teg-game {
+  min-height: 600px;
+}
+
+.twitch-panel {
+  font-weight: bold;
+}

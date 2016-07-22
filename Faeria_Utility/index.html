@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Faeria Utility</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Res/Images/favicon.png">
+
+
+    <script src="JS/External Ressources/Jquery-1.12.3/jquery-1.12.3.min.js"></script>
+    <script src="JS/External Ressources/Bootstrap/bootstrap.js"></script>
+    <script src="JS/External Ressources/PapaParse-4.1.2/papaparse.min.js"></script>
+    <script src="JS/global.js"></script>
+    <script src="JS/events.js"></script>
+    <script src="JS/parsing.js"></script>
+    <script src="JS/main.js"></script>
+
+    <link href="CSS/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/3-col-portfolio.css" rel="stylesheet" />
+    <link href="CSS/index.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top faeriaNav">
+        <div class="container center-block" id="banner_title">
+            <h1 id="headermp" class="text-center faeriaTitle">Faeria Utility Database</h1>
+        </div>
+        <p style="color:#ccc; position:absolute; right:20px;top:10px;" class="navbar-text text-right">by Kraken</p>
+    </nav>
+
+    <div class="main-content">
+        <div class="container-fluid">
+
+            <div class=" col-md-3 filterBar">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+
+                        <!-- LAND_TYPES -->
+                        <div class="row">
+                            <div class="col-md-4 portfolio-item">
+                                <a href="javascript:void(0);"><img class="img-responsive" id="_lt_neutral" src="Res/Images/land_types/land_neutral.png" style="opacity:0.5;" alt=""></a>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="javascript:void(0);"><img class="img-responsive" id="_lt_mountain" src="Res/Images/land_types/land_mountain.png" style="opacity:0.5;" alt=""></a>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="javascript:void(0);"><img class="img-responsive" id="_lt_desert" src="Res/Images/land_types/land_desert.png" style="opacity:0.5;" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="javascript:void(0);"><img class="img-responsive" id="_lt_water" src="Res/Images/land_types/land_water.png" style="opacity:0.5;" alt=""></a>
+                            </div>
+                            <div class="col-md-4 portfolio-item">
+                                <a href="javascript:void(0);"><img class="img-responsive" id="_lt_forest" src="Res/Images/land_types/land_forest.png" style="opacity:0.5;" alt=""></a>
+                            </div>
+                        </div>
+
+                        <hr style="border-color:#808080; margin-bottom:20px; margin-top:10px;" />
+
+                        <!-- CARD_COST -->
+                        <div class="row">
+                           
+                            <div id="manacost" class="btn-group" data-toggle="buttons">
+                                <label id="_mc_all" class="btn btn-default btn-neutral btn-rarity-group active"><input type="radio" name="cost" value="∞"> ∞ </label>
+                                <label id="_mc_0" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="0" > 0 </label>
+                                <label id="_mc_1" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="1" > 1 </label>
+                                <label id="_mc_2" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="2" > 2 </label>
+                                <label id="_mc_3" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="3" > 3 </label>
+                                <label id="_mc_4" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="4" > 4 </label>
+                                <label id="_mc_5" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="5" > 5 </label>
+                                <label id="_mc_6" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="6" > 6 </label>
+                                <label id="_mc_7" class="btn btn-default btn-neutral btn-rarity-group"><input type="radio" name="cost" value="7" > 7+ </label>
+                            </div>
+                            
+                        </div>
+
+                        <hr style="border-color:#808080; margin-top:30px" />
+
+
+                        <!-- RARITY -->
+                        <div class="row">
+                            <button type="button" id="_r_common" class="btn btn-default btn-neutral btn-rarity-group"><img src="Res/Images/card_rarity/neutral.png" width="20" /> Common</button>
+                            <button type="button" id="_r_rare" class="btn btn-default btn-rare btn-rarity-group"><img src="Res/Images/card_rarity/rare.png" width="20" /> Rare</button>
+                            <button type="button" id="_r_epic" class="btn btn-default btn-epic btn-rarity-group"><img src="Res/Images/card_rarity/epic.png" width="20" /> Epic</button>
+                            <button type="button" id="_r_legendary" class="btn btn-default btn-legendary btn-rarity-group"><img src="Res/Images/card_rarity/legendary.png" width="20" /> Legendary</button>
+                        </div>
+
+                        <hr style="border-color:#808080; margin-bottom:10px; margin-top:30px;" />
+
+                        <!-- CARD_NAME -->
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class=" input-group card-name">
+                                    <label class="card-search">Search Cards</label>
+                                    <input id="inputDatabaseName" type="text" class="form-control card-search-input" placeholder="Search..." name="emote_name" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+
+
+                        <hr style="border-color:#808080; margin-bottom:20px;" />
+
+                        <!-- CARD_TYPE -->
+                        <div class="row">
+                            <button id="_t_creature" type="button" class="btn btn-default btn-creature ">Creature</button>
+                            <button id="_t_structure" type="button" class="btn btn-default btn-structure ">Structure</button>
+                            <button id="_t_event" type="button" class="btn btn-default btn-event">Event</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-3"></div>
+
+            <div id="containercards" class="col-md-9 container-cards">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

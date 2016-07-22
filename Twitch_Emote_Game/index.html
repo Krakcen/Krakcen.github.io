@@ -1,0 +1,104 @@
+<head>
+  <title>Twitch Emote Game</title>
+  <link rel="icon" type="image/png" href="RES/image/favicon.png">
+
+  <!-- stylesheet -->
+  <link href="CSS\font-awesome-4.6.3\css\font-awesome.min.css" rel="stylesheet" />
+  <link href="CSS\bootstrap.min.css" rel="stylesheet" />
+  <link href="CSS\animate.css" rel="stylesheet" />
+  <link href="CSS\global.css" rel="stylesheet" />
+  <link href="CSS\main-content.css" rel="stylesheet" />
+
+  <script src="JS\jquery-2.2.4.min.js"></script>
+  <script src="JS\angular.min.js"></script>
+  <script src="JS\angular-animate.js"></script>
+  <script src="JS\bootstrap.min.js"></script>
+  <script src="JS\main.js"></script>
+  <script src="JS\load_emotes.js"></script>
+  <script src="JS\game.js"></script>
+
+</head>
+<body ng-app="twitchEmoteGame">
+
+  <nav class="navbar navbar-fixed-top navbar-teg">
+    <div class="container center-block" id="banner_title">
+      <h1 id="headermp" class="text-center"><a id="teg-title" class="headermp" href="index.html">twitch emote game</a></h1>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="container-fluid">
+
+      <div id="teg-toolbar" class="col-md-3">
+        <div class="panel panel-default twitchmodule">
+          <img style="display:none;" id="kappaDOM" src="RES\image\twitch-kappa.jpg" height="100" width="100" class="img-responsive"></img>
+          <div id="mButtons" class="panel-body text-center" ng-controller="MenuController as menu">
+            <h4 ng-click="menu.showGame()"><a href="javascript:;">Play</a> <i id="play-logo" class="animated infinite wobble fa fa-arrow-left" aria-hidden="true"></i></h4>
+            <hr/>
+            <h4 ng-click="menu.showAbout()"><a href="javascript:;">About</a> <i id="about-logo" class="animated infinite tada fa fa-info-circle" aria-hidden="true"></i></h4>
+            <hr/>
+            <h4 ng-click="menu.showScores()"><a href="javascript:;">Scores</a> <i id="scores-logo" class="animated infinite tada fa fa-info-circle" aria-hidden="true"></i></h4>
+          </div>
+        </div>
+
+        <div id="utility-panel" style="display:none;" class="panel panel-default twitchmodule">
+          <div class="panel-body text-center">
+            <button type="button" class="btn btn-primary">Save Score</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div id="teg-game" class="panel panel-default twitchmodule">
+          <div class="panel-body" ng-controller="GameController as game">
+
+            <div id="welcome-content">
+              <h1>Welcome !</h1><hr/>
+              <h2>Twitch based game in which you need to display your twitch knowledge (emote related) in a serie of 20 randomly picked global emotes.</h2><hr/>
+              <h3><b>Rules:</b><br>each frame will contain the emote icon and an input bar, send your answer or skip. Score will be given the serie being finished.<br>Good Luck !</h3>
+            </div>
+
+            <!-- Score -->
+            <div id="score-content" style="display:none;">
+            </div>
+            <!-- -->
+
+            <div id="game-content" style="display:none;">
+            </div>
+
+            <div ng-show="game.launched">
+              <div ng-repeat="list in game.emoteList">
+                <div id="frame-{{game.currentEmote + 1}}" ng-show="list.isActive">
+                  <h2 class="frame-count"><b>{{game.currentEmote + 1}} / 20</b></h2>
+                  <div class="text-center emote-img-game">
+                    <img  ng-src="{{list.src}}" height="112" width="112"/>
+
+                    <form class="container answer-box">
+                      <h2 class="answer-text">Answer : <b>{{game.answer}}</b></h2>
+                      <div class="input-group">
+                        <input ng-model="game.answer" type="text" class="form-control submit-answer" placeholder="..." name="emote_name" autocomplete="off"/>
+                        <div class="input-group-btn">
+                          <button ng-click="game.answer && game.nextFrame(1)" id="submit-answer" class="btn btn-success submit-answer" type="button">Go!</button>
+                          <button ng-click="game.nextFrame(0)" type="button" id="ebutton" class="btn btn-danger skip-button">Skip</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="about-content" style="display:none;">
+              <h1>&nbsp&nbsp&nbsp<i class="fa fa-info" aria-hidden="true"></i>&nbsp&nbspAbout</h1><hr/>
+              <h3>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-envelope" aria-hidden="true"></i> &nbsphugo.villevieille@epitech.eu</h3><br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,24 @@
+body {
+    background-color: #ccc;
+}
+
+.main-content {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.body-content {
+    margin-top: 50px;
+}
+
+.link-content {
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.titlehub {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 500px;
+}
