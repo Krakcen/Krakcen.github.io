@@ -10,7 +10,7 @@
 function getFileObject() {
     $.ajax({
         type: "GET",
-        url: "https://Krakcen.github.io/Res/FaeriaData/merlin_shortened.csv",
+        url: "https://Krakcen.github.io/Faeria_Utility/Res/FaeriaData/merlin_shortened.csv",
         success: function (text) {
             dataObj = Papa.parse(text);
         },
