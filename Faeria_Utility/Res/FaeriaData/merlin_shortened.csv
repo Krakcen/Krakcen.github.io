@@ -25,11 +25,11 @@
 39;HUMAN;Unlikely Hero;creature;;2;;;;;1;2;The first time this creature fights another creature and survives, it gains +3/+3 and {charge|3}.;;0;101000;RARE
 40;HUMAN;Magnus, King of Meroval;creature;;10;;;;;4;8;"{charge|3} {combat} - Draw a card, it costs {faeria|0}.";;0;101000;LEGENDARY
 41;HUMAN;Plague Bearer;creature;;3;;;;;2;1;{last_words} - Deal 2 damage to ALL creatures.;;0;101000;EXCEPTIONAL
-42;HUMAN;Siege Engine;creature;;7;;;;;3;6;"{ranged_attack} Whenever this creature attacks, it gains +1/+0 afterwards.";;0;101000;RARE
+42;HUMAN;Siege Engine;creature;;7;;;;;2;6;"{ranged_attack} Whenever this creature attacks, it gains +1/+0 afterwards.";;0;101000;RARE
 43;HUMAN;Sharra, Dragonslayer;creature;;7;;;;;6;3;Ignores all damage equal to 4 or more.;;0;101000;LEGENDARY
 44;HUMAN;Famine;event;;2;;;;;;;Deal 1 damage to ALL creatures.;;0;101000;EXCEPTIONAL
 45;HUMAN;Royal Judge;creature;;5;;;;;1;1;"{options|Draw a free Safeguard.|Draw a free Punishment.} Add a <b>Safeguard</b> to your hand. It costs {faeria|0}. Add a <b>Punishment</b> to your hand. It costs {faeria|0}.";;0;101000;RARE
-46;HUMAN;Cartographer;creature;;3;;;;;1;1;{last_words} - Create a lake, a forest, a mountain and a desert at random.;;0;101000;RARE
+46;HUMAN;Cartographer;creature;;3;;;;;1;1;{last_words} - Add an <b>Explore</b> card to your hand.;;0;101000;RARE
 47;HUMAN;Shimmering Statue;structure;;2;;;;;;4;"{taunt} {production} - You gain 1 life.";;0;101000;COMMON
 48;HUMAN;Village Elder;creature;;2;;;;;1;1;{last_words} - Draw a card.;;0;101000;COMMON
 49;HUMAN;Storyteller;creature;;3;;;;;2;2;{gift} - Each player draws 2 cards and gains 2 Life.;;0;101000;COMMON
@@ -37,7 +37,7 @@
 51;HUMAN;Steamforge Enforcer;creature;;6;;;;;6;5;;;2;100003;COMMON
 52;HUMAN;King's Faithful;creature;;5;;;;;4;1;{protection};;0;101000;RARE
 53;HUMAN;Day of the Dragons;event;;12;;;;;;;Add the four <b>Dragons</b> to your hand. They cost {faeria|4} less.;;0;101000;LEGENDARY
-54;HUMAN;Daring Adventurer;creature;;5;;;;;2;2;{gift} - Gain +2/+2 for each adjacent enemy creature.;;0;101000;RARE
+54;HUMAN;Daring Adventurer;creature;;4;;;;;2;2;{gift} - Gain +2/+2 for each adjacent enemy creature.;;0;101000;RARE
 55;HUMAN;Maceman;creature;;4;;;;;4;4;;;2;100002;COMMON
 56;HUMAN;Baron Thulgar;creature;;6;;;;;4;5;{last_words} - Each player draws a card. They cost {faeria|0}.;;0;101000;LEGENDARY
 57;HUMAN;Wisdom;event;;3;;;;;;;Draw 2 cards.;;0;101000;EXCEPTIONAL
@@ -63,11 +63,11 @@
 77;BLUE;Gabrian Warden;creature;;7;2;;;;4;6;{gift} - Give a creature {protection}.;;2;100010;COMMON
 82;BLUE;Spring Mochi;creature;;3;2;;;;2;2;{gift} - The next card with original cost {faeria|7}+ you draw costs {faeria|3} less.;;0;101000;COMMON
 83;BLUE;Triton Warrior;creature;;4;2;;;;4;4;{jump};;2;100011;COMMON
-84;BLUE;Mystic Beast;creature;;3;1;;;;3;4;{gift} - Gets +2/+2 and Charge 2 if your opponent has {faeria|10} or more.;;2;100010;EXCEPTIONAL
-85;BLUE;Mirror Phantasm;creature;;7;2;;;;4;4;{gift} - Transform another creature into a 4/4 <b>Mirror Phantasm</b>.;;0;101000;RARE
+84;BLUE;Mystic Beast;creature;;3;3;;;;2;5;{gift} - Gets +2/+0 and {jump} if summoned adjacent to an enemy well.;;2;100010;EXCEPTIONAL
+85;BLUE;Mirror Phantasm;creature;;7;2;;;;5;5;{gift} - Transform another creature into a 5/5 <b>Mirror Phantasm</b>.;;0;101000;RARE
 86;BLUE;Triton Chef;creature;;2;2;;;;2;2;{gift} - Add a <b>Triton Banquet</b> to your hand.;;0;101000;RARE
 87;BLUE;Ninja Toad;creature;;4;3;;;;3;2;{jump}, {haste};;0;101000;EXCEPTIONAL
-88;BLUE;Frogify;event;;5;2;;;;;;Transform a creature into a 2/2 <b>Frog</b> with {jump}.;;2;100011;COMMON
+88;BLUE;Frogify;event;;5;2;;;;;;Transform a creature into a 2/2 <b>Frog</b> with {jump}.;;2;100011;EXCEPTIONAL
 93;BLUE;Gabrian Enchantment;event;;2;2;;;;;;"A creature's Attack becomes equal to its Life. Draw a card.";;0;101000;COMMON
 94;BLUE;Aurora's Creation;event;;5;3;;;;;;Add a copy of a creature to your hand. It costs {faeria|5} less.;;0;101000;RARE
 95;BLUE;Dark Stalker;creature;;3;1;;;;3;2;If you've played an event this turn, costs {faeria|2} less.;;2;100012;COMMON
@@ -76,13 +76,13 @@
 102;BLUE;Aurora's Disciple;creature;;3;2;;;;2;2;Whenever you play an event, gain +1/+1.;;2;101000;COMMON
 103;BLUE;Sturdy Shell;creature;;2;1;;;;0;5;{aquatic};;0;101000;COMMON
 104;BLUE;Baeru, the First Wave;creature;;8;3;;;;8;10;"{aquatic} {production} - Transform all adjacent lands into lakes.";;0;101000;LEGENDARY
-105;BLUE;Stormspawn;creature;;10;2;;;;4;5;{last_words} - Gain {faeria|10} and draw a card.;;2;101000;COMMON
-106;BLUE;Tale of the Old Turtle;event;;6;3;;;;;;Add 3 random blue cards to your hand. They cost {faeria|3} less.;;0;101000;RARE
+105;BLUE;Stormspawn;creature;;10;2;;;;4;5;{last_words} - Gain {faeria|10}.;;2;101000;COMMON
+106;BLUE;Tale of the Old Turtle;event;;6;2;;;;;;Draw 3 cards. All creatures drawn this way costs {faeria|2} less.;;0;101000;RARE
 107;BLUE;Wavecrash Colossus;creature;;8;2;;;;7;7;Costs {faeria|1} less for each time you've harvested from an enemy well (minimum cost: {faeria|4}).;;0;101000;EXCEPTIONAL
 108;BLUE;Orosei, Dream of the Deep;creature;;10;2;;;;6;6;"{flying}, {charge|2} {gift} - Transform all your other creatures into creatures who cost {faeria|2} more.";;0;101000;LEGENDARY
 109;BLUE;Water Elemental;creature;;4;1;;;;3;3;"{jump} {gift} - Create a lake.";;2;100009;COMMON
-110;BLUE;Gemsilk Faerie;creature;;2;2;;;;1;1;"{flying} The first time you draw an event, gain +2/+0, {protection} and {charge|2}.";;0;101000;RARE
-111;BLUE;Sunken Tower;structure;;1;2;;;;;3;{activate} - Move a land. Deal 1 damage to this structure.;;0;101000;EXCEPTIONAL
+110;BLUE;Gemsilk Faerie;creature;;2;2;;;;1;1;"{flying} The first time you draw an event, gain +2/+2 and {charge|2}.";;0;101000;RARE
+111;BLUE;Sunken Tower;structure;;0;2;;;;;3;{activate} - Move a land. Deal 1 damage to this structure.;;0;101000;EXCEPTIONAL
 112;BLUE;Azure Wisp;creature;;4;2;;;;3;3;Whenever you gather faeria from an opponent's well, gain +1/+1.;;0;101000;EXCEPTIONAL
 113;BLUE;Triton Sanctuary;structure;;2;1;;;;;1;"Whenever you gather faeria, this structure gains +1 Life. {activate} - Destroy this and gain faeria equal to its Life.";;0;101000;EXCEPTIONAL
 114;BLUE;Aurora's Dream;event;;24;3;;;;;;Draw until you have 9 cards. Reduce the cost of all cards in your hand to {faeria|0}.;;0;101000;LEGENDARY
@@ -92,12 +92,12 @@
 118;BLUE;Gabrian Archon;creature;;4;2;;;;4;4;"{charge|2}. Gain +2/+2 if you've played two cards with original cost {faeria|7}+.";;2;101000;COMMON
 119;BLUE;Triton Diver;creature;;3;1;;;;2;2;{aquatic}, {jump};;2;100011;COMMON
 120;BLUE;Shifting Tide;event;;1;1;;;;;;"{options|Move a land|Draw a card} Move a land. Draw a card.";;2;101000;COMMON
-121;BLUE;Prophet of Tides;creature;;3;2;;;;1;1;{gift} - Move a land twice.;;0;101000;COMMON
-122;BLUE;Humbling Vision;event;;3;2;;;;;;Reduce a creature's base Attack and Life by half (rounded up).;;2;100012;EXCEPTIONAL
-123;BLUE;Ancient Herald;creature;;6;1;;;;5;5;{gift} - The next creature with 5 Life or more you draw costs {faeria|2} less.;;0;101000;COMMON
+121;BLUE;Prophet of Tides;creature;;3;2;;;;3;1;{gift} - Move a land you control twice.;;0;101000;COMMON
+122;BLUE;Humbling Vision;event;;3;2;;;;;;Halve a creature's base Attack and Life (rounded up).;;2;100012;COMMON
+123;BLUE;Ancient Herald;creature;;6;1;;;;5;6;{gift} - The next creature with 5 Life or more you draw costs {faeria|2} less.;;0;101000;COMMON
 124;BLUE;Triton Banquet;event;;5;2;;;;;;Give a creature +1/+1, {protection} and {jump}.;;0;101000;EXCEPTIONAL
 125;BLUE;Aurora, Myth Maker;creature;;4;2;;;;1;1;{gift} - Change a friendly creature's base Attack and Life to 6/6.;;0;101000;LEGENDARY
-126;BLUE;Wavecrafter;creature;;6;2;;;;5;6;At the end of your opponent's turn, set ALL players' faeria to {faeria|3}.;;0;101000;RARE
+126;BLUE;Wavecrafter;creature;;6;3;;;;5;6;At the end of your opponent's turn, set ALL players' faeria to {faeria|3}.;;0;101000;RARE
 127;BLUE;Unbound Evolution;event;;2;2;;;;;;Transform a creature into a random creature that costs {faeria|2} more.;;0;101000;RARE
 128;BLUE;Aurora's Trick;event;;4;5;;;;;;Gain control of a creature with 2 Attack or less.;;0;101000;RARE
 129;BLUE;Battle Toads;event;;4;2;;;;;;Summon two 2/2 <b>Frogs</b> with {jump}.;;0;101000;EXCEPTIONAL
@@ -105,7 +105,7 @@
 131;GREEN;Sagami Warrior;creature;;4;;1;;;2;5;{combat} - Gain +1/+1.;;2;101000;COMMON
 132;GREEN;Bone Collector;creature;;2;;1;;;1;3;Whenever an adjacent creature dies, gain +1/+1.;;0;101000;COMMON
 133;GREEN;Soulbound Sagami;creature;;6;;3;;;3;5;{last_words} - A random friendly creature gains +3/+5.;;2;100008;COMMON
-134;GREEN;Sagami Elder;creature;;4;;2;;;2;6;{combat} - A random friendly creature gains +1/+1.;;2;101000;EXCEPTIONAL
+134;GREEN;Sagami Elder;creature;;4;;2;;;2;6;{combat} - A random friendly creature gains +1/+1.;;2;101000;COMMON
 135;GREEN;Ancient Beastmaster;creature;;4;;2;;;3;4;When you summon a creature with 5 Life or more, it gains +1/+1.;;0;101000;COMMON
 136;GREEN;Gaea's Grace;event;;2;;2;;;;;You and a creature each gain +3 Life.;;0;101000;EXCEPTIONAL
 137;GREEN;Tiki Chieftain;creature;;3;;2;;;2;2;{gift} - Give a creature {taunt}.;;2;100006;COMMON
@@ -113,7 +113,7 @@
 139;GREEN;Elderwood Hermit;creature;;3;;1;;;1;1;{last_words} - A random friendly creature gains +2/+4.;;0;101000;COMMON
 140;GREEN;Tiki Caretaker;creature;;3;;2;;;1;1;{gift} - Give a creature +2/+2.;;2;100006;COMMON
 141;GREEN;Tiki Piper;creature;;3;;1;;;1;1;{gift} - Give a creature +0/+4.;;0;101000;COMMON
-142;GREEN;Shamanic Dance;event;;3;;2;;;;;Give a creature +0/+5 and {taunt}.;;2;101000;COMMON
+142;GREEN;Shamanic Dance;event;;2;;2;;;;;Give a creature +0/+4 and {taunt}.;;2;101000;COMMON
 143;GREEN;Tiki Totem;structure;;3;;2;;;;3;The first time each turn you summon a creature, it gains +1/+1.;;0;101000;RARE
 144;GREEN;Possessed Ursus;creature;;5;;2;;;1;8;Whenever this creature is dealt damage, its power doubles.;;0;101000;RARE
 149;GREEN;Oakling;creature;;5;;2;;;1;5;{last_words} - A random creature in your hand gains +5/+5.;;0;101000;EXCEPTIONAL
@@ -124,9 +124,9 @@
 154;GREEN;Tiki Healer;creature;;5;;2;;;2;5;{gift} - You gain 5 Life.;;0;101000;COMMON
 155;GREEN;Ruunin's Shrine;structure;;5;;3;;;;8;Whenever damage would be dealt to you or a creature you control, it's dealt to this structure instead.;;0;101000;RARE
 156;GREEN;Oak Father;creature;;7;;2;;;6;6;{gift} - Gain +0/+1 for each forest you control.;;0;101000;COMMON
-157;GREEN;Faeria Tree;structure;;2;;1;;;;1;"{production} - This structure gains +1 Life. When this has 6 or more Life, destroy it and gain {faeria|10}.";;0;101000;RARE
+157;GREEN;Faeria Tree;structure;;2;;1;;;;1;"{production} - This structure gains +1 Life. When this has 5 or more Life, destroy it and gain {faeria|10}.";;0;101000;RARE
 158;GREEN;Living Willow;creature;;3;;2;;;1;7;{taunt};;0;101000;COMMON
-159;GREEN;Wild Growth;event;;2;;1;;;;;Create two forests at random.;;2;101000;EXCEPTIONAL
+159;GREEN;Wild Growth;event;;2;;1;;;;;Create two forests at random.;;2;100007;EXCEPTIONAL
 168;GREEN;Primeval Colossus;creature;;15;;2;;;8;12;Costs {faeria|1} less for each special land you have (minimum cost: {faeria|6}).;;0;101000;EXCEPTIONAL
 169;GREEN;Tethra, Soul of the Wild;creature;;10;;2;;;6;6;"{flying}, {charge|2} {gift} - Give a creature +5/+5.";;0;101000;LEGENDARY
 170;GREEN;Wood Elemental;creature;;4;;1;;;3;4;"{taunt} {gift} - Create a forest.";;2;100008;COMMON
@@ -135,13 +135,13 @@
 173;GREEN;Everbloom Wisp;creature;;4;;2;;;1;2;Whenever you create a forest, gain +1/+1.;;0;101000;EXCEPTIONAL
 174;GREEN;Spirit of Rebirth;creature;;3;;2;;;3;3;Whenever a friendly creature dies, a random creature in your hand gains +1/+1.;;0;101000;EXCEPTIONAL
 175;GREEN;Elderwood Embrace;event;;3;;2;;;;;Give a creature +2/+4.;;2;100006;COMMON
-176;GREEN;Ruunin's Champion;creature;;6;;2;;;3;6;Whenever this creature attacks a god, add a random green creature to your hand. It gets +3/+3.;;0;101000;COMMON
+176;GREEN;Ruunin's Messenger;creature;;5;;1;;;3;5;"{jump} Whenever this creature attacks a god, add a random green creature to your hand. It costs {faeria|2} less.";;0;101000;RARE
 177;GREEN;Verduran Force;creature;;6;;2;;;7;7;;;2;100005;EXCEPTIONAL
 178;GREEN;Grove Guardian;creature;;5;;3;;;5;6;{taunt};;2;101000;EXCEPTIONAL
 179;GREEN;Tarum, the Forest World;creature;;15;;5;;;7;15;"{taunt} {last_words} - Fill the world with forests.";;0;101000;LEGENDARY
 180;GREEN;Weeping Idol;structure;;1;;1;;;;3;Whenever you are dealt damage, gain {faeria|1}.;;0;101000;RARE
-181;GREEN;Earthcraft;event;;2;;1;;;;;"Draw a card and {options|Create a forest|Create a lake|Create a mountain|Create a desert} Create a forest. Create a lake. Create a mountain. Create a desert.";;2;100007;RARE
-182;GREEN;Ruunin's Avenger;creature;;6;;2;;;5;5;"{taunt} Gain 1 Life for each time you've been dealt damage this game.";;0;101000;RARE
+181;GREEN;Earthcraft;event;;2;;1;;;;;"Draw a card and {options|Create a forest|Create a lake|Create a mountain|Create a desert} Create a forest. Create a lake. Create a mountain. Create a desert.";;2;101000;RARE
+182;GREEN;Wild Avenger;creature;;6;;2;;;5;5;"{taunt} Gain 1 Life for each time you've been dealt damage this game.";;0;101000;EXCEPTIONAL
 183;GREEN;Ancient Boar;creature;;4;;2;;;2;5;If you control a creature with 5 Life or more, costs {faeria|2} less.;;2;101000;COMMON
 184;GREEN;Ruunin's Command;event;;2;;2;;;;;"{options|Give a creature +2/+2.|Gain 5 life.} - Give a creature +2/+2. - Gain 5 Life.";;0;101000;RARE
 185;GREEN;Voice of Hunger;creature;;5;;2;;;3;5;{gift} - Destroy all adjacent friendly creatures. Gain Attack AND Life equal to their combined Life.;;0;101000;RARE
@@ -158,7 +158,7 @@
 196;RED;Architect;creature;;2;;;2;;2;2;{gift} - Give a structure +2 Life.;;0;101000;RARE
 197;RED;Gut Gorger;creature;;5;;;1;;5;5;{gift} - If your opponent has 10 Life or less, gain +2/+2.;;0;101000;COMMON
 198;RED;Kobold Barracks;structure;;2;;;2;;;4;Adjacent friendly creatures have +2/+0.;;2;100014;RARE
-199;RED;Hate Seed;creature;;6;;;2;;4;5;Costs {faeria|1} less for each creature with higher attack than life you've summoned.;;2;101000;COMMON
+199;RED;Hate Seed;creature;;6;;;2;;4;5;Costs {faeria|1} less for each creature with higher Attack than Life you've summoned.;;2;101000;COMMON
 200;RED;Ogre Battler;creature;;8;;;2;;6;9;{taunt};;2;100015;COMMON
 201;RED;Bold Bargainer;creature;;7;;;2;;3;4;{gift} - A random card in your hand costs {faeria|7} less.;;0;101000;COMMON
 202;RED;Seifer, Blood Tyrant;creature;;6;;;2;;5;6;When Seifer destroys a creature, he gains Attack and Life equal to the destroyed creature's original Attack and Life.;;0;101000;LEGENDARY
@@ -180,14 +180,14 @@
 226;RED;Flame Thrower;creature;;3;;;3;;3;2;"{ranged_attack} Whenever this creature attacks a god, deal 1 damage to all enemy creatures.";;0;101000;COMMON
 231;RED;Volcanic Colossus;creature;;9;;;2;;8;8;Costs {faeria|1} less for each enemy creature that has died in combat (minimum cost: {faeria|5}).;;0;101000;EXCEPTIONAL
 232;RED;Garudan, Heart of the Mountain;creature;;10;;;2;;6;6;"{flying}, {charge|2} {gift} - Deal 3 damage to all enemy creatures.";;0;101000;LEGENDARY
-233;RED;Fire Elemental;creature;;4;;;1;;1;4;"{gift} - Create a mountain. {combat} - Deal 2 damage to a random enemy creature.";;2;101000;COMMON
+233;RED;Fire Elemental;creature;;4;;;1;;5;2;{gift} - Create a mountain.;;2;101000;COMMON
 234;RED;Flamesilk Faerie;creature;;2;;;2;;1;1;"{flying} The first time you draw an event, gain +3/+1 and {ranged_attack}.";;0;101000;RARE
 235;RED;Derelict Tower;structure;;2;;;2;;;3;{activate} - Deal 1 damage. Deal 1 damage to this structure.;;0;101000;EXCEPTIONAL
 236;RED;Bloodfire Wisp;creature;;4;;;2;;1;2;Whenever an enemy creature dies, gain +2/+1.;;0;101000;EXCEPTIONAL
 237;RED;Groundshaker;creature;;6;;;2;;5;6;{gift} - Deal 1 damage to ALL enemies.;;0;101000;RARE
 238;RED;Firebringer;creature;;4;;;2;;2;2;Gain +1/+1 whenever you summon a creature with higher Attack than Life (while in your deck or hand).;;0;101000;EXCEPTIONAL
 239;RED;Blazing Salamander;creature;;5;;;2;;2;5;{gift} - Deal 2 damage to all adjacent enemy creatures.;;0;101000;EXCEPTIONAL
-240;RED;Bloodwell Sprite;creature;;4;;;1;;4;4;Whenever you harvest from an opponent's well, deal 1 damage to your opponent.;;2;100015;RARE
+240;RED;Bloodstone Sprite;creature;;4;;;1;;4;4;Whenever you harvest from an opponent's well, deal 1 damage to your opponent.;;2;100015;RARE
 241;RED;Seifer's Wrath;event;;2;;;2;;;;Deal 2 damage to a creature. If it dies, deal 2 damage to its controller.;;0;101000;EXCEPTIONAL
 242;RED;Devouring Plant;structure;;2;;;2;;;5;"{taunt} {production} - Deal 2 damage to adjacent enemy creatures.";;0;101000;EXCEPTIONAL
 243;RED;Firebomb;event;;4;;;2;;;;Deal 4 damage to a creature or structure.;;0;101000;COMMON
@@ -202,14 +202,14 @@
 252;YELLOW;Khalim's Prayer;event;;0;;;;2;;;Gain {faeria|2} and draw a card. Play only if you attacked a god this turn. You may pray only once each turn.;;0;101000;RARE
 253;YELLOW;Khalim's Follower;creature;;1;;;;2;0;1;"{haste} Gain +2/+0 against gods.";;0;101000;COMMON
 254;YELLOW;Oradrim Templar;creature;;3;;;;1;3;3;Gain +3/+0 against gods.;;0;101000;COMMON
-255;YELLOW;Oradrim Sagittarius;creature;;3;;;;1;1;2;"{ranged_attack} Whenever you attack a god, gain {faeria|1}.";;0;101000;RARE
+255;YELLOW;Oradrim Sagittarius;creature;;3;;;;2;1;3;"{ranged_attack} Whenever you attack a god, gain {faeria|1}.";;0;101000;RARE
 256;YELLOW;Oradrim Fanatic;creature;;3;;;;2;3;2;"{jump} {gift} - Move a creature you control.";;0;101000;COMMON
 257;YELLOW;Desert Twister;event;;0;;;;5;;;Teleport a creature to a desert you control.;;0;101000;RARE
-258;YELLOW;Wind Gate;structure;;2;;;;2;;4;"You can summon creatures on spaces adjacent to this structure. {activate} - Move Wind Gate.";;0;101000;RARE
-259;YELLOW;Malevolent Spirit;creature;;5;;;;1;3;3;{gift} - You drain 2 life from your opponent.;;2;101000;EXCEPTIONAL
+258;YELLOW;Wind Gate;structure;;1;;;;1;;4;"You can summon creatures on spaces adjacent to this structure. {activate} - Move Wind Gate.";;0;101000;RARE
+259;YELLOW;Malevolent Spirit;creature;;5;;;;1;3;3;{gift} - You drain 2 Life from your opponent.;;2;101000;EXCEPTIONAL
 260;YELLOW;Khalim, Sky Prodigy;creature;;5;;;;2;3;6;"{flying}, {charge|2} When Khalim attacks a god, add a <b>Khalim's Follower</b> to your hand. It costs {faeria|0}.";;0;101000;LEGENDARY
 261;YELLOW;Slaughtering Shadow;creature;;3;;;;1;6;1;;;2;100017;COMMON
-262;YELLOW;Deathwish Ghoul;creature;;3;;;;2;3;1;{last_words} - Gain {faeria|3}.;;2;100017;COMMON
+262;YELLOW;Deathwish Ghoul;creature;;3;;;;2;3;1;{last_words} - Gain {faeria|2}.;;2;100017;COMMON
 263;YELLOW;Last Nightmare;event;;6;;;;3;;;Destroy a creature.;;2;100019;EXCEPTIONAL
 264;YELLOW;Soul Pact;event;;0;;;;2;;;Gain {faeria|2} and deal 2 damage to yourself.;;2;101000;COMMON
 265;YELLOW;Altar of Souls;structure;;3;;;;3;;3;{activate} - Deal 2 damage to yourself and add a 6/1 <b>Slaughtering Shadow</b> to your hand. It costs {faeria|1}.;;0;101000;RARE
@@ -220,7 +220,7 @@
 274;YELLOW;Drakkar Skycaptain;creature;;4;;;;1;2;4;"{flying} Whenever you draw a flying creature, it gains +1/+1.";;0;101000;EXCEPTIONAL
 275;YELLOW;Windborne Emissary;creature;;3;;;;2;3;3;"{flying}. Has +2/+0 while you control another flying creature.";;0;101000;COMMON
 276;YELLOW;Shaytan Scavenger;creature;;4;;;;2;4;3;Costs {faeria|2} less if you attacked a god this turn.;;0;101000;COMMON
-277;YELLOW;Dune Drake;creature;;4;;;;2;4;4;"{flying}, {charge|2} Can't gather faeria.";;2;100020;COMMON
+277;YELLOW;Dune Drake;creature;;4;;;;1;4;4;"{flying}, {charge|2} Can't gather faeria.";;2;100020;COMMON
 278;YELLOW;Windborne Champion;creature;;5;;;;5;5;5;"{flying}, {charge|5} {gift} - Move a creature.";;0;101000;RARE
 287;YELLOW;Windstorm Colossus;creature;;9;;;;2;7;5;Costs {faeria|1} less for each event you've played (minimum cost: {faeria|4}).;;0;101000;EXCEPTIONAL
 288;YELLOW;Azarai, Wrath of the Desert;creature;;10;;;;2;6;6;"{flying}, {charge|2} {gift} - Azarai drains 2 Attack from each enemy creature.";;0;101000;LEGENDARY
@@ -237,7 +237,7 @@
 299;YELLOW;Demon Wrangler;creature;;2;;;;1;2;1;{gift} - You may sacrifice another creature, summoning a 5/2 {flying} <b>Demon Wing</b> in its place.;;0;101000;COMMON
 300;YELLOW;Death Walker;creature;;3;;;;2;6;5;"{deathtouch}. You must sacrifice another creature to summon this creature.";;0;101000;EXCEPTIONAL
 301;YELLOW;Oath to Oblivion;event;;2;;;;2;;;Destroy a friendly creature. Summon a 6/3 <b>Oblivion Knight</b> with {charge|3} in its place.;;0;101000;EXCEPTIONAL
-302;YELLOW;Shaytan Vampire;creature;;7;;;;2;7;4;{gift} - This creature drains 2 life from all adjacent enemy creatures.;;2;101000;RARE
+302;YELLOW;Shaytan Vampire;creature;;6;;;;2;5;6;Whenever Shaytan Vampire damages a god, you gain that much life.;;2;101000;RARE
 303;YELLOW;Iona, Beloved by All;creature;;2;;;;2;2;1;"{flying} Can't be attacked.";;0;101000;LEGENDARY
 304;YELLOW;Demon Wing;creature;;3;;;;1;5;2;{flying};;2;100017;COMMON
 305;YELLOW;Oblivion Knight;creature;;5;;;;1;6;3;{charge|3};;2;100018;COMMON
@@ -246,28 +246,42 @@
 308;YELLOW;Doomgate, Door to Oblivion;structure;;2;;;;3;;1;{activate} - Destroy a friendly creature. This structure gains +4 Life. When it has 13 or more destroy it and summon Ostregoth.;;0;101000;LEGENDARY
 309;YELLOW;Windstorm Archer;creature;;2;;;;2;1;3;"{ranged_attack} Whenever you play an event, gain +1/+0 this turn.";;0;101000;EXCEPTIONAL
 310;YELLOW;Windstorm Charger;creature;;3;;;;2;2;4;"{charge|2} Whenever you play an event, gain +2/+0 this turn (limit +6/+0).";;0;101000;COMMON
-311;HUMAN;Apex Predator;creature;;6;3;3;;;3;3;"{jump} {gift} - Gain Attack and Life equal to any creature's.";;0;101000;RARE
+311;HUMAN;Apex Predator;creature;;7;3;3;;;3;3;"{jump} {gift} - Gain Attack and Life equal to any creature's.";;0;101000;RARE
 312;HUMAN;Icerock Behemoth;creature;;8;3;;3;;8;8;{taunt}, {protection};;0;101000;RARE
 313;HUMAN;Twinsoul Spirit;creature;;4;3;;;3;4;3;"{flying}  Can be summoned adjacent to a friendly creature. {gift} - Summon another Twinsoul Spirit.";;0;101000;RARE
 314;HUMAN;Warstorm Champion;creature;;6;;3;3;;4;8;Whenever ANY of your creatures fight, gain +1/+1.;;0;101000;RARE
-315;HUMAN;Soul Eater;creature;;5;;3;;3;1;1;Gain +1/+1 for each friendly creature that has died this game.;;0;101000;RARE
-316;HUMAN;Scourgeflame Specter;creature;;6;;;3;3;3;5;"{flying}, {haste}, {charge|2} {combat} - Deal 3 damage to your opponent.";;0;101000;RARE
+315;HUMAN;Soul Eater;creature;;5;;3;;3;1;1;"{flying}, {charge|3} Gain +1/+1 for each friendly creature that has died this game.";;0;101000;RARE
+316;HUMAN;Scourgeflame Specter;creature;;6;;;3;3;3;5;"{flying}, {haste}. {charge|2} {combat} - Deal 3 damage to your opponent.";;0;101000;RARE
 329;HUMAN;Cutthroat Bandit;creature;;3;;;;;4;1;;;2;100002;COMMON
 335;HUMAN;Rebel Slinger ;creature;;3;;;;;2;2;{gift} - Deal 2 damage to your opponent.;;2;100002;COMMON
-339;PANDORA;Shard of Pandora;artifact;;0;;;;;;;;;0;106666;COMMON
-340;PANDORA;Seeds of Syland;artifact;;0;;;;;;;Create 2 prairies at random for each player.;;0;106666;EXCEPTIONAL
-341;PANDORA;Noodle Bowl;artifact;;0;;;;;;;Summon a <b>Triton Warrior</b> on a random land for each player.;;0;106666;EXCEPTIONAL
-342;PANDORA;Gabrian Jar;artifact;;0;;;;;;;Each player gains {faeria|3}.;;0;106666;EXCEPTIONAL
-343;PANDORA;Titan's Eye;artifact;;0;;;;;;;Add a Surge of Strength to each player's hand.;;0;106666;EXCEPTIONAL
-344;PANDORA;Dragon Statuette;artifact;;0;;;;;;;Add a 6/6 Crystal Dragon to each player's hand.;;0;106666;EXCEPTIONAL
-345;PANDORA;Merchant's Stone;artifact;;0;;;;;;;Add a Flipping the Table to each player's hand.;;0;106666;EXCEPTIONAL
-346;PANDORA;Jeweled Boots;artifact;;0;;;;;;;Add a Charge! to each player's hand.;;0;106666;EXCEPTIONAL
-347;PANDORA;Forgotten Ring;artifact;;0;;;;;;;Add a random neutral creature to each player's hand. It gets +2/+2.;;0;106666;EXCEPTIONAL
-348;PANDORA;Eredon's Drums;artifact;;0;;;;;;;ALL creatures gain +2/+2, wherever they are.;;0;106666;RARE
-349;PANDORA;Conch Horn;artifact;;0;;;;;;;Add an Echo to each player's hand.;;0;106666;RARE
-350;PANDORA;Aurora's Tea Pot;artifact;;0;;;;;;;Halve the power and life of ALL creatures.;;0;106666;RARE
-351;PANDORA;Disk of Time;artifact;;0;;;;;;;Reduce the cost of all events in each player's hand and deck by {faeria|1}.;;0;106666;RARE
-352;PANDORA;Necklace of the Damned;artifact;;0;;;;;;;Add a 2/1 Plague Bearer to each player's hand.;;0;106666;RARE
-353;PANDORA;Garudan's Scale;artifact;;0;;;;;;;Deal 2 damage to ALL creatures.;;0;106666;RARE
-354;PANDORA;Eboshi's Toque;artifact;;0;;;;;;;Add a Feast! to each player's hand.;;0;106666;RARE
-355;PANDORA;Tear of the Serpent World;artifact;;0;;;;;;;Transform all cards in all hands and decks into cards of a higher rarity. They cost {faeria|1} less.;;0;106666;LEGENDARY
+350;HUMAN;Three Wishes;event;;2;2;2;2;2;;;Gain 3 life and copy the top 3 cards of your opponent's deck. They cost {faeria|3} less. You cannot wish for more wishes.;;0;101000;RARE
+403;PANDORA;Dark Crystal;event;;7;;;;;;;Drain 4 life from your opponent, deal 3 damage to all enemy creatures, and draw 2 cards.;;0;107777;EXCEPTIONAL
+404;PANDORA;Yakhorn Warhorn;event;;7;;;;;;;Summon three 2/4 <b>Angry Prairie Yaks</b> with haste.;;0;107777;EXCEPTIONAL
+405;PANDORA;Astral Weapon;creature;;16;;;;;8;8;"{flying}. {gift} - Destroy all adjacent creatures, structures and lands.";;0;107777;EXCEPTIONAL
+406;PANDORA;Ocarina;event;;10;;;;;;;Take an extra turn after this one.;;0;107777;EXCEPTIONAL
+407;PANDORA;Djinn's Lamp;event;;3;;;;;;;"{options|Add 3 random green cards to your hand. They cost {faeria|3} less|Add 3 random blue cards to your hand. They cost {faeria|3} less|Add 3 random red cards to your hand. They cost {faeria|3} less|Add 3 random yellow cards to your hand. They cost {faeria|3} less} Choose a color. Add 3 random cards of that color to your hand. They cost {faeria|3} less.";;0;107777;EXCEPTIONAL
+408;PANDORA;Urn of Gabria;event;;0;;;;;;;Draw 2 cards and gain {faeria|2}.;;0;107777;EXCEPTIONAL
+409;PANDORA;Iona's Mirror;event;;2;;;;;;;Add two copies of the last <b>Treasure</b> your opponent played to your hand.;;0;107777;EXCEPTIONAL
+410;PANDORA;Bloodstone Golem;creature;;3;;;;;4;5;"{production} - Create {faeria|1} in each well. Whenever faeria is harvested, deal 1 damage to your opponent.";;0;107777;EXCEPTIONAL
+411;PANDORA;Chalice from the Palace;event;;2;;;;;;;Give a random friendly creature +1/+1 . Six times.;;0;107777;EXCEPTIONAL
+412;PANDORA;Eredon's Drum;event;;8;;;;;;;Give all your creatures +2/+2, wherever they are.;;0;107777;EXCEPTIONAL
+413;PANDORA;Cloud Machine;structure;;3;;;;;;4;Friendly creatures have {flying}, {jump} and +1/+0.;;0;107777;EXCEPTIONAL
+414;PANDORA;Ring of Dominion;event;;0;;;;;;;"{options|Transform a land to a forest. Gain control of it.|Transform a land to a lake. Gain control of it.|Transform a land to mountain. Gain control of it.|Transform a land to a desert. Gain control of it.} Transform a land into the color of your choice. Gain control of it.";;0;107777;EXCEPTIONAL
+415;PANDORA;The World's Tear;event;;2;;;;;;;Transform a creature that attacked a god this turn into a 10/10 <b>Sky Swallower</b> with {flying}.;;0;107777;EXCEPTIONAL
+416;PANDORA;Clockwork Yak;creature;;4;;;;;6;9;;;0;107777;EXCEPTIONAL
+417;PANDORA;Equinox Automaton;creature;;8;;;;;6;6;"{gift} - You gain 6 Life. {last_words} - Deal 6 damage to each god.";;0;107777;EXCEPTIONAL
+418;PANDORA;Magda's Rose;event;;9;;;;;;;Gain control of an enemy creature.;;0;107777;EXCEPTIONAL
+419;PANDORA;Aurora's Tea Pot;event;;5;;;;;;;Change the base Attack and Life of all friendly creatures to 6/6.;;0;107777;EXCEPTIONAL
+420;PANDORA;Stone of Fair Fortune;event;;0;;;;;;;Shuffle 3 random <b>Treasures</b> into your deck.;;0;107777;EXCEPTIONAL
+421;PANDORA;Secret of Strength;event;;4;;;;;;;Give a creature {flying}, {charge|3} and +4/+4.;;0;107777;EXCEPTIONAL
+422;PANDORA;Void Guardian;creature;;0;;;;;8;8;{gift} - Destroy your deck.;;0;107777;EXCEPTIONAL
+423;PANDORA;Crystal Dragon;creature;;3;;;;;6;6;{flying}. {charge|3}.;;0;107777;EXCEPTIONAL
+424;PANDORA;Flameburst Ruby;event;;1;;;;;;;"{options|Deal 3 damage.|Deal 3 damage to everything.} - Deal 3 damage. - Deal 3 damage to everything.";;0;107777;EXCEPTIONAL
+425;PANDORA;Hammer of Aoros;event;;3;;;;;;;Deal 3 damage. At the end of your turn, the <b>Hammer</b> returns to your hand.;;0;107777;EXCEPTIONAL
+426;PANDORA;Earthfire Shaker;creature;;6;;;;;2;2;{gift} - Deal 2 damage to all enemies. For each enemy destroyed, gain +2/+2.;;0;107777;EXCEPTIONAL
+427;PANDORA;Death's Desire;event;;0;;;;;;;Destroy a creature. Its controller gains faeria equal to its cost and draws 2 cards.;;0;107777;EXCEPTIONAL
+428;PANDORA;Bottled Lightning;event;;6;;;;;;;Deal 6 damage to a creature and 3 damage to all adjacent enemies.;;0;107777;EXCEPTIONAL
+429;PANDORA;Dancing Blade;creature;;5;;;;;4;9;"{flying}, {jump} {production} - Deal 4 damage to all adjacent enemies.";;0;107777;EXCEPTIONAL
+430;PANDORA;Doom Scythe;event;;5;;;;;;;Destroy a creature. Summon a 6/1 <b>Slaughtering Shadow</b> in its place.;;0;107777;EXCEPTIONAL
+431;PANDORA;Jeweled Magpie;creature;;3;;;;;1;5;"{flying}, {haste}. Whenever this creature attacks a god, add a random <b>Treasure</b> to your hand.";;0;107777;EXCEPTIONAL
+432;PANDORA;Wheel of Chaos;event;;2;;;;;;;"{options|Destroy 2 unoccupied lands.|Destroy a creature with 5 Attack or less.|Gain 7 life.} - Destroy 2 unoccupied lands. - Destroy a creature with 5 Attack or less. - Gain 7 Life.";;0;107777;EXCEPTIONAL
