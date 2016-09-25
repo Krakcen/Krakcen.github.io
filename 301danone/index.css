@@ -1,0 +1,38 @@
+html {
+	height: 100%;
+}
+body {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.modal-dialog.modal-lg {
+	width: 80%;
+}
+
+#modalContentChart {
+	height: 600px;
+}
+
+.btn-xlarge {
+	padding: 18px 28px;
+	font-size: 22px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+#random-info {
+	padding-left: 25px;
+	font-size: 18px;
+}
+
+.checkArray {
+	margin-top: 5px;
+}
+
+.mainContent {
+	margin-top: 5%;
+	height: 800px;
+}
