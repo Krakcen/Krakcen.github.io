@@ -60,6 +60,7 @@ function deleteRandomValue() {
 function finalDisplay(result) {
 	//Disp Charts Button
 	$('#listChart').attr('style', 'position:absolute;right:150px;top:300px;');
+	$('#listChart').attr('class', 'btn btn-xlarge btn-success animated zoomIn');	
 	updateChartDataLine(result.sortedList, chart3);
 	updateChartData(result.comparisons, chart1);
 }
@@ -74,8 +75,8 @@ function createListCharts() {
 			datasets: [{
 				label: 'Unsorted List',
 				data: [],
-				borderColor: ['#d11141'],
-				borderWidth: 2
+				fill: true,
+				borderColor: '#d11141',
 			}]
 		},
 
@@ -91,20 +92,10 @@ function createListCharts() {
 			datasets: [{
 				label: 'Sorted List',
 				data: [],
-				borderColor: [
-				'#00b159'
-				],
+				fill: true,
+				borderColor: '#00b159',
 			}]
 		},
-		options: {
-			scales: {
-				yAxes: [{
-					ticks: {
-						beginAtZero:true
-					}
-				}]
-			}
-		}
 	});
 	chart3 = myNewChart;
 }
