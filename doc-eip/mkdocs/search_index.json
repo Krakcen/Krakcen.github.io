@@ -1,0 +1,19 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Introduction", 
+            "title": "Index"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "ceci est la documentation du projet EIP 2019 du groupe:\n\n\n\n\nhugo.villevieille@epitech.eu\n\n\nalexandre.aubert@epitech.eu\n\n\nguillaume.devant@epitech.eu\n\n\nmarceau.bernelin@epitech.eu\n\n\nmartin.geraud@epitech.eu", 
+            "title": "A Propos"
+        }
+    ]
+}
