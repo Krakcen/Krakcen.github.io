@@ -1,0 +1,103 @@
+﻿body {
+    font-family: Audimat;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+@font-face {
+    font-family: Audimat;
+    src: url(../../res/font/AUDIMRG_.TTF);
+}
+
+.btn-default {
+    border-color: #000;
+    color: #FFF;
+    background-color: #000;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.content {
+    background-image:url(../../res/image/back_pic2.jpg);
+background-repeat:no-repeat;
+background-size: cover;
+min-height: 100%;
+    height:800px;
+}
+
+/* btn hacks */
+
+.btn:focus {
+  outline: none;
+}
+
+input[type=button]:hover {
+     background-position: 0px;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default.focus, .btn-default:focus {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default.active {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default:active:hover {
+     color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default:active:focus {
+     color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default:active {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default.active:hover {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.footer {
+    height: 240px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    padding-left:50px;
+    color: #ccc;
+    background-color: black;
+	
+}
+
+.img-responsive {
+	margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+    height: auto;
+}
