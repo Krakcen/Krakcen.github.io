@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Cartoonist;
+    src: url(../fonts/Cartoonist/Cartoonist_Kooky.ttf);
+}
+
+@font-face {
+    font-family: MissionGothicRegular;
+    src: url(../fonts/MissionGothic/Mission_Gothic_Regular.otf);
+}
+
+@font-face {
+    font-family: MissionGothicBold;
+    src: url(../fonts/MissionGothic/Mission_Gothic_Bold.otf);
+}
+
+h2 {
+    font-family: Cartoonist;
+    /*color: #fff200;*/
+    color: #fff200;
+    text-shadow: 4px 4px #000000;
+}
+
+p {
+    font-family: MissionGothicBold;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: royalblue;
+}
+
+.btn-success {
+    color: #fff200;
+    background-color: rgb(60,60,60);
+    border-color: rgb(60,60,60);
+    font-family: MissionGothicBold;
+}
+
+/* Navbar Override */
+.container-navbar {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-fixed-top.navbar-shrink {
+    background-color: rgb(60,60,60);
+}
+
+.navbar-brand {
+    float: left;
+    padding: 0px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 60px;
+}
+
+.mary-navlinks {
+    padding-top: 12px;
+}
+
+@media (min-width: 768px) {
+    .navbar > .container .navbar-brand {
+        font-size: 2em;
+    }
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 2em;
+    color: #fff200;
+    text-shadow: 4px 4px #000000;
+    margin-left: 50px;
+    font-family: Cartoonist;
+}
+
+/* Header Override */
+.mary-header {
+    background-image: url(../img/dinooo.png);
+    background-size: cover;
+    box-shadow: 0px 0px 15px 2px #000000;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+}
+
+.mary-header-intro {
+    font-family: Cartoonist;
+    font-size: 80px;
+    color: #FFFFF0;
+    text-shadow: 6px 6px #000000;
+    border-color: #000000;
+}
+
+/* About Override */
+.mary-about {
+    background-image: url(../img/eye-about-opacity.png);
+    background-size: cover;
+    box-shadow: 0px 0px 15px 2px #000000;
+}
+
+.mary-about-content {
+    padding-top: 60px;
+}
+
+.mary-about-text {
+    font-size: 1.7em;
+}
+
+
+/* Contact Override */
+.mary-contact-title {
+    padding-bottom: 50px;
+}
+
+
+/* Portfolio Override */
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #FFDE00;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.mary-portfolio-content {
+    padding-top: 50px;
+}
+
+
+/* Footer Override */
+footer {
+    color: rgb(255, 242, 0);
+}
+
+footer h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: rgb(60,60,60);
+}
